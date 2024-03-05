@@ -3,10 +3,27 @@ version: 2
 sources:
   - name: raw 
     schema: gz_raw_data
+    description: Hello raw data
     tables: 
       - name : sales 
         identifier : raw_gz_sales
+        description: Hi sales
+        columns:
+          - name: products_id
+            tests:
+            - unique
+            - not_null
+                
       - name : product
         identifier : raw_gz_product
+        description: Hi product
+        columns:
+          - name: orders_id
+            tests:
+            - unique
+            - not_null
+                
+
       - name : ship
         identifier : raw_gz_ship
+        description: Hi ship
