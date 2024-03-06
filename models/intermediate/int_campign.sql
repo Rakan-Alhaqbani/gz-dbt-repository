@@ -14,6 +14,6 @@ SELECT *
 FROM {{ref('stg_raw__facebook')}}
 
 UNION ALL
- 
-SELECT *
+
+SELECT * 
 FROM {{ref('stg_raw__criteo')}}
