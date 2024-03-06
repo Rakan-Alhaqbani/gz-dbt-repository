@@ -13,7 +13,7 @@ renamed as (
         paid_source,
         campaign_key,
         campgn_name as campaing_name,
-        Cast(ads_cost as FLOAT64),
+        Cast(ads_cost as FLOAT64) as ads_cost,
         impression,
         click
 
